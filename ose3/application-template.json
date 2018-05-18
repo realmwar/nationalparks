@@ -2,7 +2,7 @@
   "kind": "Template",
   "apiVersion": "v1",
   "metadata": {
-    "name": "nationalparks",
+    "name": "workshop",
     "annotations": {
       "iconClass": "icon-java",
       "description": "Application template NationalParks backend running on SpringBoot and using mongodb",
@@ -10,8 +10,9 @@
     }
   },
   "labels": {
-    "application": "nationalparks",
-    "createdBy": "nationalparks-template"
+    "application": "workshop",
+	"component": "nationalparks",
+	"role": "backend"
   },
   "parameters": [
     {
@@ -30,14 +31,14 @@
       "description": "The name for the mongodb application.",
       "displayName": "Mongodb App",
       "name": "MONGODB_APPLICATION_NAME",
-      "value": "mongodb",
+      "value": "mongodb-nationalparks",
       "required": true
     },
     {
       "description": "Git source URI for application",
       "displayName": "Git source repository",
       "name": "GIT_URI",
-      "value": "https://github.com/openshift-roadshow/nationalparks.git",
+      "value": "https://github.com/realmwar/nationalparks.git",
       "required": true
     },
     {
@@ -57,7 +58,7 @@
       "description": "Database name",
       "displayName": "Database name",
       "name": "MONGODB_DATABASE",
-      "value": "mongodb",
+      "value": "bW9uZ29kYg==",
       "required": true
     },
     {
@@ -76,21 +77,21 @@
       "description": "Database user name",
       "displayName": "Database user name",
       "name": "MONGODB_USER",
-      "value": "mongodb",
+      "value": "bW9uZ29kYg==",
       "required": true
     },
     {
       "description": "Database user password",
       "displayName": "Database user password",
       "name": "MONGODB_PASSWORD",
-      "value": "mongodb",
+      "value": "bW9uZ29kYg==",
       "required": true
     },
     {
       "description": "Database admin password",
       "displayName": "Database admin password",
       "name": "MONGODB_ADMIN_PASSWORD",
-      "value": "mongodb",
+      "value": "bW9uZ29kYg==",
       "required": true
     },
     {
